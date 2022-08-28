@@ -1,0 +1,20 @@
+:root {
+  --am_dark_blue: #131921;
+  --am_middle_blue: #232F3E; 
+  --am_light_blue: #37475A; 
+  --am_light_blue_hover: #485769; 
+  --am_orange: #ff9900;
+  --am_light_orange: #febd69;
+  --am_red: #c40000;
+  --am_blue: #007185; 
+  --am_orange_hover: #C7511F;
+  --am_gray: #d5d9d9;
+  --am_gray-hover: #EAEDED;
+  --am_gray-dark: #879596;
+  --am_off-blue: #e9f0fe;
+  --am_green: #007600;
+  --am_blue-link: #0066c0;
+  --am_prime: #1a98ff;
+  --white: #fff;
+  --black: #000;
+}

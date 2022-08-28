@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tab color in browser -->
+  <meta name="theme-color" content="#131921">
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- amazon fonts -->
+  <link rel="stylesheet" href="./css/amazon-fonts.css">
+  <!-- variables -->
+  <link rel="stylesheet" href="./css/colors.css">
+  <!-- main style -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- media -->
+  <link rel="stylesheet" href="./css/media.css">
+  <title>amazon.eg</title>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <div class="overlay-menu"></div>
+  <!-- start header -->
+  <header class="header">
+    <div class="header__container">
+
+      <div class="navbar__all-category hide mob-tab-show"><img src="./img/amazon-icons/menu.svg" alt="menu-icon"
+          width="18px" style="margin-right: 10px;">
+      </div>
+
+      <!-- logo -->
+      <div class="header__logo">
+        <a href="#"><img class="header__amazonLogo" src="./img/amazon-icons/amazon_logo-white.svg"
+            alt="Amazon.eg-logo"><span class="header__amazonLogo--eg">.eg</span></a>
+      </div>
+
+      <!-- deliver to egypt -->
+      <div class="header__deliver mob-hide">
+        <a href="#" class="header__deliver-content">
+          <img class="header__deliver-icon" src="./img/amazon-icons/map-outline.svg" alt="map-icon">
+          <div style="display: inline-block;">
+            <span class="header__deliver-lineOne">Deliver to</span>
+            <span class="header__deliver-lineTwo">Egypt</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- search -->
+      <div class="header__search mob-hide">
+        <form class="header__search-form">
+
+          <div class="header__search-select-container mob-tab-hide">
+            <span class="arrow"></span>
+            <select class="header__search-select" id="category">
+              <option value="All Category">All Category</option>
+              <option value="Amazon Devices">Amazon Devices</option>
+              <option value="Amazon Fashion">Amazon Fashion</option>
+              <option value="Arts, Crafts & Sewing">Arts, Crafts & Sewing</option>
+              <option value="Automotive Parts & Accessories">Automotive Parts & Accessories</option>
+              <option value="Baby">Baby</option>
+              <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+              <option value="Books">Books</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Grocery & Gourmet Food">Grocery & Gourmet Food</option>
+              <option value="Health, Household & Baby Care">Health, Household & Baby Care</option>
+              <option value="Home & Garden">Home & Garden</option>
+              <option value="Home Related">Home Related</option>
+              <option value="Industrial & Scientific">Industrial & Scientific</option>
+              <option value="Musical Instruments">Musical Instruments</option>
+              <option value="Office Products">Office Products</option>
+              <option value="Pet Supplies">Pet Supplies</option>
+              <option value="Software">Software</option>
+              <option value="Sports">Sports</option>
+              <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+              <option value="Toys & Games">Toys & Games</option>
+              <option value="Video Games">Video Games</option>
+            </select>
+          </div>
+
+          <input class="header__search-input" type="text" placeholder="Search amazon">
+
+          <div class="header__search-icon">
+            <input class="header__search-submit" type="submit" value="">
+          </div>
+
+        </form>
+      </div>
+
+      <!-- language -->
+      <div class="header__language ml-10 mob-tab-hide">
+        <img class="header__egFlag" src="./img/egypt-flag.png" alt="egypt-flag">
+
+        <!-- start language and country -->
+        <div class="language-and-country">
+          <div style="cursor: default;">
+            <div class="lang-container">
+              <label for="arb-lang" class="flex-row">
+                <input type="radio" name="lang-select" id="arb-lang">
+                <span>العربية - AR</span>
+              </label>
+            </div>
+            <div class="lang-container">
+              <label for="eng-lang" class="flex-row">
+                <input type="radio" name="lang-select" id="eng-lang" checked>
+                <span>English - EN</span>
+              </label>
+            </div>
+            <div class="shopping-on">
+              <img src="./img/egypt-flag.png" alt="egypt-flag" width="9%" class="flag-img">
+              <span>You are shopping on <span class="weight-600">amazon.eg</span></span>
+            </div>
+            <div class="change-country">
+              <a href="#" class="blue-link">Change country/region</a>
+            </div>
+          </div>
+        </div>
+        <!-- end language and country -->
+
+      </div>
+      <!-- end language -->
+
+
+      <!-- start account & lists -->
+      <div class="header__account mr-10 mob-tab-hide">
+        <div class="header__account-text">
+          <img src="./img/user-img.png" class="user-img" alt="user-img">
+          <div>
+            <span class="header__account-lineOne">Hello, <span class="username">Sign in</span></span>
+            <span class="header__account-lineTwo">Account & Lists</span>
+          </div>
+        </div>
+
+        <!-- sign-in-msg -->
+        <div class="sign-in-msg" style="cursor: default;">
+          <div class="sign-in-recommendation">
+            <div class="sign-in-container">
+              <div class="content">
+                <a href="#" class="sign-in-btn">Sign in</a>
+                <span style="font-size: 11px">New customer?
+                  <a href="#" class="blue-link" style="display: inline; font-size: 11px">Start here</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="account-and-lists" style="cursor: default;">
+          <!-- start sign-in-recommendation -->
+          <div class="sign-in-recommendation">
+            <div class="sign-in-container">
+              <div class="content">
+                <a href="#" class="sign-in-btn"><span>Sign in</span></a>
+                <span class="font-13">New customer?
+                  <a href="#" class="blue-link" style="display: inline-block">Start here</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- end sign-in-recommendation -->
+
+          <div class="flex-row py-15">
+            <div class="lists">
+              <h3>Your Lists</h3>
+              <a href="#">Create a list</a>
+            </div>
+            <div class="account">
+              <h3>Your Account</h3>
+              <a href="#">Your Account</a>
+              <a href="#">Your Orders</a>
+              <a href="#">Your Addresses</a>
+              <a href="#">Your Lists</a>
+              <a href="#">Your Recommendations</a>
+              <a href="#">Your Prime Membership</a>
+              <a href="#">Your Seller Account</a>
+              <span class="is-signed-in">
+                <a href="#">Switch Accounts</a>
+                <a href="#">Sign Out</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end account & lists -->
+
+      <a href="#" class="special-signin hide mob-tab-show mob-tab-ml20">
+        <div style="display:inline-block;">Hello,<span class="username" style="display:block; margin-top: 3px;">Sign
+            in</span></div>
+        <img src=" ./img/amazon-icons/user-icon-white.png" alt="user-img" width="23px" style="margin-left: 5px;">
+      </a>
+
+      <!-- orders -->
+      <a class="header__orders mr-10 orange-hover mob-tab-hide" href="">Orders</a>
+
+      <div class="header__cart mob-tab-ml20">
+        <a href="#">
+          <span class="header__cart-count">0</span>
+          <img class="header__cart-icon" src="./img/amazon-icons/cart.svg" alt="map-icon">
+          <span class="header__cart-text mob-tab-hide">Cart</span>
+        </a>
+      </div>
+
+    </div> <!-- header__container -->
+  </header>
+  <!-- end header -->
+
+  <!-- mob-search -->
+  <div class="mob-search hide mob-show">
+    <div class="header__container" style="height: 40px;">
+      <div class="header__search ">
+        <form class="header__search-form">
+          <input class="header__search-input" type="text" placeholder="Search amazon">
+          <div class="header__search-icon">
+            <input class="header__search-submit" type="submit" value="">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- start navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+
+      <ul class="navbar__category">
+        <li class="navbar__all-category mob-tab-hide"><img src="./img/amazon-icons/menu.svg" alt="menu-icon"
+            width="18px" style="margin-right: 8px;">All</li>
+        <li><a href="">Today's Deals</a></li>
+        <li class="prime hide start-tab-show"><a href="">Prime</a></li>
+        <li class="hide mob-tab-show"><a href="">Prime</a></li>
+        <li><a href="">Coupons</a></li>
+        <li><a href="">Mobile Phones</a></li>
+        <li><a href="">Electronics</a></li>
+        <li><a href="">Appliances</a></li>
+        <li><a href="">Fashion</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Video Games</a></li>
+        <li><a href="">Toys & Games</a></li>
+        <li><a href="">Grocery</a></li>
+        <li><a href="">Perfumes</a></li>
+        <li><a href="">Your amazon.eg</a></li>
+        <li class="mob-tab-hide"><a href="">Help</a></li>
+      </ul>
+
+      <div class="navbar__shipping mob-tab-hide">
+
+        <a href="#" class="navbar__shipping-link" style="display: none;">
+          <div class="navbar__shipping-link-feature">
+            <img src="./img/amazon-icons/fast-shipping.png" alt="fast-shipping" width="20px">
+            <span>Fast & Free Shipping</span>
+          </div>
+          <div class="navbar__shipping-link-feature">
+            <img src="./img/amazon-icons/return.svg" alt="free-returns" width="15px">
+            <span>Free Returns</span>
+          </div>
+          <div class="navbar__shipping-link-feature">
+            <img src="./img/amazon-icons/cash.png" alt="cash-on-delivery" width="20px">
+            <span>Cash on Delivery</span>
+          </div>
+        </a>
+
+        <a href="#"><img src="./img/selling-on-amazon.png" alt="selling-on-amazon" class="hover-opacity"
+            style="display: inline-block; margin-top: 2px;"></a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- mob-deliver -->
+  <div class="mob-deliver hide mob-show">
+    <div class="header__deliver-content">
+      <img class="header__deliver-icon" src="./img/amazon-icons/map-outline.svg" alt="map-icon">
+      <span style="color: #fff; font-size: 13px;">Deliver to Egypt</span>
+    </div>
+  </div>
+
+  <!-- mobile navbar -->
+  <div class="mob-navbar hide mob-flex">
+  </div>
+
+  <div class="menu">
+    <img src="./img/amazon-icons/close-icon.png" class="close-icon" alt="close-icon">
+    <div class="username-content">
+      <a href="#">
+        <img src="./img/user-img.png" class="user-img" alt="user-img">
+        Hello,&nbsp;<span class="username">Sign in</span>
+      </a>
+    </div>
+
+    <div class="menu-items">
+
+      <h3 class="menu-items__head-item backg-gray trending">Trending</h3>
+      <ul class="menu-items__container py-5">
+        <li><a class="menu-items__sub-item" href="#">Best Sellers</a></li>
+        <li><a class="menu-items__sub-item" href="#">New Releases</a></li>
+        <li><a class="menu-items__sub-item" href="#">Movers & Shakers</a></li>
+      </ul>
+
+      <h3 class="menu-items__head-item backg-gray features">Programs & Features</h3>
+      <ul class="menu-items__container py-5">
+        <li><a class="menu-items__sub-item" href="#">Today's Deals</a></li>
+        <li><a class="menu-items__sub-item" href="#">Amazon Prime</a></li>
+      </ul>
+
+      <h3 class="menu-items__head-item backg-gray category">Shop By Category</h3>
+      <ul class="menu-items__container py-5">
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Mobiles, Tablets & Accessories</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <li><a class="menu-items__sub-item" href="#">All Mobile Phones</a></li>
+          <li><a class="menu-items__sub-item" href="#">Tablets</a></li>
+          <li><a class="menu-items__sub-item" href="#">Wearable Technology</a></li>
+          <li><a class="menu-items__sub-item" href="#">Cases & Covers</a></li>
+          <li><a class="menu-items__sub-item" href="#">Power Banks & Chargers</a></li>
+          <li><a class="menu-items__sub-item" href="#">All Mobile Accessories</a></li>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Computers & Office Supplies</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <li><a class="menu-items__sub-item" href="#">All Computers</a></li>
+          <li><a class="menu-items__sub-item" href="#">Laptops</a></li>
+          <li><a class="menu-items__sub-item" href="#">Desktop & Monitors</a></li>
+          <li><a class="menu-items__sub-item" href="#">Drives & Storage</a></li>
+          <li><a class="menu-items__sub-item" href="#">Networking Devices</a></li>
+          <li><a class="menu-items__sub-item" href="#">Keyboards & Mice</a></li>
+          <li><a class="menu-items__sub-item" href="#">PC Gaming</a></li>
+          <li><a class="menu-items__sub-item" href="#">All Computer Accessories</a></li>
+          <li><a class="menu-items__sub-item" href="#">Printers & Accessories</a></li>
+          <li><a class="menu-items__sub-item" href="#">Office & School Supplies</a></li>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">TVs & Electronics</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <li><a class="menu-items__sub-item" href="#">All Electronics</a></li>
+          <li><a class="menu-items__sub-item" href="#">Televisions</a></li>
+          <li><a class="menu-items__sub-item" href="#">Cameras</a></li>
+          <li><a class="menu-items__sub-item" href="#">Headphones</a></li>
+          <li><a class="menu-items__sub-item" href="#">Speakers</a></li>
+          <li><a class="menu-items__sub-item" href="#">Home Entertainment Systems</a></li>
+          <li><a class="menu-items__sub-item" href="#">All Electronic Accessories</a></li>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Women's Fashion</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <li><a class="menu-items__sub-item" href="#">All Fashion</a></li>
+          <li><a class="menu-items__sub-item" href="#">All Women's Fashion</a></li>
+          <li><a class="menu-items__sub-item" href="#">Clothing</a></li>
+          <li><a class="menu-items__sub-item" href="#">Watches</a></li>
+          <li><a class="menu-items__sub-item" href="#">Jewelry</a></li>
+          <li><a class="menu-items__sub-item" href="#">Sportswear</a></li>
+          <li><a class="menu-items__sub-item" href="#">Lingerie & Sleepwear</a></li>
+          <li><a class="menu-items__sub-item" href="#">Shoes</a></li>
+          <li><a class="menu-items__sub-item" href="#">Bags & Wallets</a></li>
+          <li><a class="menu-items__sub-item" href="#">Eyewear</a></li>
+          <li><a class="menu-items__sub-item" href="#">Sports Shoes</a></li>
+          <li><a class="menu-items__sub-item" href="#">Travel Bags & Backpacks</a></li>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Men's Fashion</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <li><a class="menu-items__sub-item" href="#">All Fashion</a></li>
+          <li><a class="menu-items__sub-item" href="#">All Men's Fashion</a></li>
+          <li><a class="menu-items__sub-item" href="#">Clothing</a></li>
+          <li><a class="menu-items__sub-item" href="#">Sportswear</a></li>
+          <li><a class="menu-items__sub-item" href="#">Accessories</a></li>
+          <li><a class="menu-items__sub-item" href="#">Underwear</a></li>
+          <li><a class="menu-items__sub-item" href="#">Shoes</a></li>
+          <li><a class="menu-items__sub-item" href="#">Bags & Wallets</a></li>
+          <li><a class="menu-items__sub-item" href="#">Eyewear</a></li>
+          <li><a class="menu-items__sub-item" href="#">Sports Shoes</a></li>
+          <li><a class="menu-items__sub-item" href="#">Travel Bags & Backpacks</a></li>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Kids Fashion</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <h4 class="section-title">Boys Fashion</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Boys Fashion</a></li>
+            <li><a class="menu-items__sub-item" href="#">Boys Clothing</a></li>
+            <li><a class="menu-items__sub-item" href="#">Boys Shoes</a></li>
+          </ul>
+
+          <h4 class="section-title">Girls Fashion</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Girls Fashion</a></li>
+            <li><a class="menu-items__sub-item" href="#">Girls Clothing</a></li>
+            <li><a class="menu-items__sub-item" href="#">Girls Shoes</a></li>
+          </ul>
+
+          <h4 class="section-title">Amazon Fashion</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Fashion</a></li>
+            <li><a class="menu-items__sub-item" href="#">All Kids School Bags</a></li>
+          </ul>
+        </ul>
+
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Health, Beauty & Perfumes</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <h4 class="section-title">Health & Personal Care
+          </h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Health & Personal Care</a></li>
+            <li><a class="menu-items__sub-item" href="#">Personal Care Appliances</a></li>
+            <li><a class="menu-items__sub-item" href="#">Hair Care & Styling</a></li>
+            <li><a class="menu-items__sub-item" href="#">Bath & Body</a></li>
+            <li><a class="menu-items__sub-item" href="#">Dental Care</a></li>
+          </ul>
+
+          <h4 class="section-title">Beauty</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Beauty</a></li>
+            <li><a class="menu-items__sub-item" href="#">Make-up</a></li>
+            <li><a class="menu-items__sub-item" href="#">Skin Care</a></li>
+            <li><a class="menu-items__sub-item" href="#">Men's Grooming</a></li>
+            <li><a class="menu-items__sub-item" href="#">Luxury Beauty</a></li>
+          </ul>
+
+          <h4 class="section-title">Perfumes</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Perfumes</a></li>
+            <li><a class="menu-items__sub-item" href="#">Perfumes for Him</a></li>
+            <li><a class="menu-items__sub-item" href="#">Perfumes for Her</a></li>
+            <li><a class="menu-items__sub-item" href="#">Gift Sets</a></li>
+          </ul>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Supermarket</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <h4 class="section-title">Supermarket</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Supermarket</a></li>
+          </ul>
+
+          <h4 class="section-title">Food & Beverages</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Food & Beverages</a></li>
+            <li><a class="menu-items__sub-item" href="#">Rice, Pasta, & Pulses</a></li>
+            <li><a class="menu-items__sub-item" href="#">Coffee, Tea & Beverages</a></li>
+            <li><a class="menu-items__sub-item" href="#">Snacks & Sweets</a></li>
+            <li><a class="menu-items__sub-item" href="#">Cooking Ingredients</a></li>
+          </ul>
+
+          <h4 class="section-title">Home Care</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Home Care</a></li>
+            <li><a class="menu-items__sub-item" href="#">Cleaning Products</a></li>
+            <li><a class="menu-items__sub-item" href="#">Laundry Essentials</a></li>
+            <li><a class="menu-items__sub-item" href="#">Paper & Plastic Supplies</a></li>
+          </ul>
+
+          <h4 class="section-title">Pet Supplies</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Pet Supplies</a></li>
+          </ul>
+
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Home, Furniture & Tools</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <h4 class="section-title">Home</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Home</a></li>
+            <li><a class="menu-items__sub-item" href="#">Home Décor</a></li>
+            <li><a class="menu-items__sub-item" href="#">Bedding & Linen</a></li>
+            <li><a class="menu-items__sub-item" href="#">Bath Accessories</a></li>
+            <li><a class="menu-items__sub-item" href="#">Storage & Organisation</a></li>
+            <li><a class="menu-items__sub-item" href="#">Household Supplies</a></li>
+            <li><a class="menu-items__sub-item" href="#">Garden & Outdoors</a></li>
+          </ul>
+
+          <h4 class="section-title">Furniture</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Furniture</a></li>
+            <li><a class="menu-items__sub-item" href="#">Rice, Pasta, & Pulses</a></li>
+            <li><a class="menu-items__sub-item" href="#">Living Room</a></li>
+            <li><a class="menu-items__sub-item" href="#">Bedroom</a></li>
+            <li><a class="menu-items__sub-item" href="#">Office Furniture</a></li>
+          </ul>
+
+          <h4 class="section-title">Tools & Home Improvement</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Tools & Home Improvement</a></li>
+            <li><a class="menu-items__sub-item" href="#">Power Tools</a></li>
+            <li><a class="menu-items__sub-item" href="#">Hand Tools</a></li>
+            <li><a class="menu-items__sub-item" href="#">Lighting</a></li>
+            <li><a class="menu-items__sub-item" href="#">Tools Accessories</a></li>
+          </ul>
+
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Kitchen & Appliances</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <h4 class="section-title">Kitchen & Dining</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Kitchen & Dining</a></li>
+            <li><a class="menu-items__sub-item" href="#">Cookware</a></li>
+            <li><a class="menu-items__sub-item" href="#">Bakeware</a></li>
+            <li><a class="menu-items__sub-item" href="#">Tableware</a></li>
+            <li><a class="menu-items__sub-item" href="#">Containers & Storage</a></li>
+            <li><a class="menu-items__sub-item" href="#">Kitchen Accessories</a></li>
+          </ul>
+
+          <h4 class="section-title">Appliances</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Appliances</a></li>
+            <li><a class="menu-items__sub-item" href="#">Kitchen & Home Appliances</a></li>
+            <li><a class="menu-items__sub-item" href="#">Large Appliances</a></li>
+            <li><a class="menu-items__sub-item" href="#">Coffee Makers</a></li>
+            <li><a class="menu-items__sub-item" href="#">Blenders & Juicers</a></li>
+            <li><a class="menu-items__sub-item" href="#">Vacuums</a></li>
+            <li><a class="menu-items__sub-item" href="#">Refrigerators</a></li>
+            <li><a class="menu-items__sub-item" href="#">Washing Machines</a></li>
+          </ul>
+
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Toys, Games & Baby</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <h4 class="section-title">Baby</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Baby Products</a></li>
+            <li><a class="menu-items__sub-item" href="#">Diapers</a></li>
+            <li><a class="menu-items__sub-item" href="#">Baby Care</a></li>
+            <li><a class="menu-items__sub-item" href="#">Travel Gear</a></li>
+            <li><a class="menu-items__sub-item" href="#">Nursing & Feeding</a></li>
+            <li><a class="menu-items__sub-item" href="#">Baby Fashion</a></li>
+            <li><a class="menu-items__sub-item" href="#">Nursery Furniture</a></li>
+          </ul>
+
+          <h4 class="section-title">Toys & Games</h4>
+          <ul class="mt-10 pl-15 weight-400">
+            <li><a class="menu-items__sub-item" href="#">All Toys & Games</a></li>
+            <li><a class="menu-items__sub-item" href="#">Outdoor Play</a></li>
+            <li><a class="menu-items__sub-item" href="#">Action Figures</a></li>
+            <li><a class="menu-items__sub-item" href="#">Dolls & Accessories</a></li>
+            <li><a class="menu-items__sub-item" href="#">Construction Toys</a></li>
+          </ul>
+
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Sports, Fitness & Outdoors</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <li><a class="menu-items__sub-item" href="#">All Sports, Fitness & Outdoors</a></li>
+          <li><a class="menu-items__sub-item" href="#">Cardio Equipment</a></li>
+          <li><a class="menu-items__sub-item" href="#">Strength & Weight Equipment</a></li>
+          <li><a class="menu-items__sub-item" href="#">Fitness Technology</a></li>
+          <li><a class="menu-items__sub-item" href="#">Sports Apparel & Equipment</a></li>
+          <li><a class="menu-items__sub-item" href="#">Sports Supplements</a></li>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Books</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <li><a class="menu-items__sub-item" href="#">All Books</a></li>
+          <li><a class="menu-items__sub-item" href="#">Children's Books</a></li>
+          <li><a class="menu-items__sub-item" href="#">Business & Finance</a></li>
+          <li><a class="menu-items__sub-item" href="#">Self-Help</a></li>
+          <li><a class="menu-items__sub-item" href="#">Literature & Fiction</a></li>
+          <li><a class="menu-items__sub-item" href="#">Biographies & Memoirs</a></li>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Video Games</h4>
+        <ul class="menu-items__container pb-10 border-bottom hide">
+          <li><a class="menu-items__sub-item" href="#">All Video Games</a></li>
+          <li><a class="menu-items__sub-item" href="#">Playstation</a></li>
+          <li><a class="menu-items__sub-item" href="#">Xbox One</a></li>
+          <li><a class="menu-items__sub-item" href="#">Nintendo Switch</a></li>
+          <li><a class="menu-items__sub-item" href="#">PC Gaming</a></li>
+          <li><a class="menu-items__sub-item" href="#">Game Titles</a></li>
+          <li><a class="menu-items__sub-item" href="#">Gaming Accessories</a></li>
+        </ul>
+
+        <h4 class="menu-items__head-item another-sub-items hide-item">Automotive</h4>
+        <ul class="menu-items__container pb-10 hide">
+          <li><a class="menu-items__sub-item" href="#">All Automotive</a></li>
+          <li><a class="menu-items__sub-item" href="#">Car Parts & Accessories</a></li>
+          <li><a class="menu-items__sub-item" href="#">Car Tools & Equipment</a></li>
+          <li><a class="menu-items__sub-item" href="#">Car Electronics</a></li>
+          <li><a class="menu-items__sub-item" href="#">Car Care</a></li>
+        </ul>
+
+      </ul>
+
+      <h3 class="menu-items__head-item backg-gray setting">Settings & Help</h3>
+      <ul class="menu-items__container">
+        <li class="mb-5 mt-5">
+          <a class="menu-items__sub-item setting-item" href="#">
+            <img src="./img/amazon-icons/user-icon.png" width="17px" alt="user-icon" style="margin-left: 2px">
+            Your Account
+          </a>
+        </li>
+        <li class="mb-5">
+          <a class="menu-items__sub-item setting-item" href="#">
+            <img src="./img/amazon-icons/earth-gray.png" width="18px" alt="lang-icon"
+              style="margin-left: 1px; margin-right: 11px">
+            English
+          </a>
+        </li>
+        <li class="mb-5">
+          <a class="menu-items__sub-item setting-item" href="#">
+            <img src="./img/egypt-flag.png" class="egypt-flag" alt="egypt-flag">
+            Egypt
+          </a>
+        </li>
+        <li class="mb-5">
+          <a class="menu-items__sub-item setting-item" href="#">
+            <img src="./img/amazon-icons/help.svg" width="20px" alt="help-icon">
+            Help
+          </a>
+        </li>
+        <li>
+          <a class="menu-items__sub-item setting-item" href="#">
+            <img src="./img/amazon-icons/sign-in.svg" width="18px" alt="sign-in-icon">
+            Sign in
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="amazon-prime">
+    <a href="#"><img src="./img/amazon-prime/amazon-prime.png" alt="amazon-prime-ads" width="100%"></a>
+  </div>
+  <!-- end navbar -->
+
+  <!-- start slide show -->
+  <div class='slide-container'>
+    <div class='previous-arrow'><img class='prev-btn' src="./img/amazon-icons/previous.svg"></div>
+    <div class='slide-show'></div>
+    <div class='next-arrow'><img class='nxt-btn' src="./img/amazon-icons/next.svg"></div>
+  </div>
+  <!-- end slide show -->
+
+  <div class="best-new-offers hide mob-tab-flex">
+  </div>
+
+  <div class="banner-ads mb-20 hide mob-show">
+  </div>
+
+  <!-- start latest-offers -->
+  <div class="latest-offers-section">
+    <div class="container">
+      <!-- render products here, from js file -->
+      <div class="latest-offers categories">
+      </div>
+    </div>
+  </div>
+  <!-- end latest-offers -->
+
+  <!-- start today's deals -->
+  <div class="container mob-tab-px-0">
+    <div class="offers-carousel my-20" style="height: 380px;">
+
+      <div class="offers-carousel__previous-btn none-select" onclick="horizontalScroll(this, -1)"></div>
+      <div class="offers-carousel__next-btn" onclick="horizontalScroll(this, 1)"></div>
+
+      <div class="offers-carousel__head-title">
+        <h2>Today's Deals</h2>
+        <a href="" class="blue see-more-arrow">See all deals</a>
+      </div>
+
+      <!-- <div class="offers-carousel__gradient-left hide" style="height: 280px;"></div>
+      <div class="offers-carousel__gradient-right" style="height: 280px;"></div> -->
+
+      <div class="offers-carousel__categories" style="height: 340px;">
+        <!-- render products here, from js file -->
+        <div class="todays-deals-products content child-mr-right-20"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end today's deals -->
+
+  <!-- start budget-store -->
+  <div class="container mob-tab-px-0">
+    <div class="offers-carousel my-20">
+
+      <div class="offers-carousel__previous-btn none-select" onclick="horizontalScroll(this, -1)"></div>
+      <div class="offers-carousel__next-btn" onclick="horizontalScroll(this, 1)"></div>
+
+      <div class="offers-carousel__head-title">
+        <h2>Shop the budget store</h2>
+        <a href="" class="blue see-more-arrow">Shop all deals</a>
+      </div>
+
+      <!-- <div class="offers-carousel__gradient-left hide" style="height: 200px;"></div>
+      <div class="offers-carousel__gradient-right" style="height: 200px;"></div> -->
+
+      <div class="offers-carousel__categories">
+        <!-- render products here, from js file -->
+        <div class="budget-store-products content child-mr-right-20"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end budget-store -->
+
+  <!-- start new-arrivals -->
+  <div class="new-arrivals-section">
+    <div class="container">
+      <!-- render products here, from js file -->
+      <div class="new-arrivals categories">
+      </div>
+    </div>
+  </div>
+  <!-- end new-arrivals -->
+
+  <!-- start strongest-offers -->
+  <div class="strongest-offers-section my-20">
+    <div class="container">
+      <!-- render products here, from js file -->
+      <div class="strongest-offers categories">
+      </div>
+    </div>
+  </div>
+  <!-- end strongest-offers -->
+
+  <!-- start top-deals-appliances -->
+  <div class="container mob-tab-px-0">
+    <div class="offers-carousel my-20">
+
+      <div class="offers-carousel__previous-btn none-select" onclick="horizontalScroll(this, -1)"></div>
+      <div class="offers-carousel__next-btn" onclick="horizontalScroll(this, 1)"></div>
+
+      <div class="offers-carousel__head-title">
+        <h2>Top Deals | Large Appliances</h2>
+        <a href="#" class="blue see-more-arrow">Shop all deals</a>
+      </div>
+
+      <!-- <div class="offers-carousel__gradient-left hide" style="height: 200px;"></div>
+      <div class="offers-carousel__gradient-right" style="height: 200px;"></div> -->
+
+      <div class="offers-carousel__categories">
+        <!-- render products here, from js file -->
+        <div class="appliances-products content child-mr-right-20"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end top-deals-appliances -->
+
+  <!-- start top-deals-mobiles -->
+  <div class="container mob-tab-px-0">
+    <div class="offers-carousel my-20">
+
+      <div class="offers-carousel__previous-btn none-select" onclick="horizontalScroll(this, -1)"></div>
+      <div class="offers-carousel__next-btn" onclick="horizontalScroll(this, 1)"></div>
+
+      <div class="offers-carousel__head-title">
+        <h2>Top Deals | Mobiles</h2>
+        <a href="#" class="blue see-more-arrow">Shop all deals</a>
+      </div>
+
+      <!-- <div class="offers-carousel__gradient-left hide" style="height: 200px;"></div>
+      <div class="offers-carousel__gradient-right" style="height: 200px;"></div> -->
+
+      <div class="offers-carousel__categories">
+        <!-- render products here, from js file -->
+        <div class="mobiles-products content child-mr-right-20"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end top-deals-mobiles -->
+
+  <!-- start top-picks-makeup -->
+  <div class="container mob-tab-px-0">
+    <div class="offers-carousel my-20">
+
+      <div class="offers-carousel__previous-btn none-select" onclick="horizontalScroll(this, -1)"></div>
+      <div class="offers-carousel__next-btn" onclick="horizontalScroll(this, 1)"></div>
+
+      <div class="offers-carousel__head-title">
+        <h2>Top picks in Makeup</h2>
+        <a href="#" class="blue see-more-arrow">Shop now</a>
+      </div>
+
+      <!-- <div class="offers-carousel__gradient-left hide" style="height: 200px;"></div>
+      <div class="offers-carousel__gradient-right" style="height: 200px;"></div> -->
+
+      <div class="offers-carousel__categories">
+        <!-- render products here, from js file -->
+        <div class="makeup-products content child-mr-right-20"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end top-picks-makeup -->
+
+  <!-- start top-picks-sports -->
+  <div class="container mob-tab-px-0">
+    <div class="offers-carousel my-20">
+
+      <div class="offers-carousel__previous-btn none-select" onclick="horizontalScroll(this, -1)"></div>
+      <div class="offers-carousel__next-btn" onclick="horizontalScroll(this, 1)"></div>
+
+      <div class="offers-carousel__head-title">
+        <h2>Top picks in Sports</h2>
+        <a href="#" class="blue see-more-arrow">See more</a>
+      </div>
+
+      <!-- <div class="offers-carousel__gradient-left hide" style="height: 200px;"></div>
+      <div class="offers-carousel__gradient-right" style="height: 200px;"></div> -->
+
+      <div class="offers-carousel__categories">
+        <!-- render products here, from js file -->
+        <div class="sports-products content child-mr-right-20"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end top-picks-sports -->
+
+  <!-- start top-picks-toys -->
+  <div class="container mob-tab-px-0">
+    <div class="offers-carousel my-20">
+
+      <div class="offers-carousel__previous-btn none-select" onclick="horizontalScroll(this, -1)"></div>
+      <div class="offers-carousel__next-btn" onclick="horizontalScroll(this, 1)"></div>
+
+      <div class="offers-carousel__head-title">
+        <h2>Top picks in Toys</h2>
+        <a href="#" class="blue see-more-arrow">See more</a>
+      </div>
+
+      <!-- <div class="offers-carousel__gradient-left hide" style="height: 200px;"></div>
+      <div class="offers-carousel__gradient-right" style="height: 200px;"></div> -->
+
+      <div class="offers-carousel__categories">
+        <!-- render products here, from js file -->
+        <div class="toys-products content child-mr-right-20"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end top-picks-toys -->
+
+  <!-- start customers-browsing -->
+  <div class="customers-browsing">
+    <div class="customers-browsing__container">
+
+      <div class="offers-carousel" style="height: 100%">
+
+        <div class="offers-carousel__previous-btn none-select" onclick="horizontalScroll(this, -1)"></div>
+        <div class="offers-carousel__next-btn" onclick="horizontalScroll(this, 1)"></div>
+
+        <div class="offers-carousel__header">
+          <h2 class="title">Customers who viewed items in your browsing history also viewed</h2>
+          <!-- <div class="pages">Page <span class="current-page">1</span> of <span class="pages-number">6</span></div> -->
+        </div>
+
+        <div class="offers-carousel__categories" style="height: 435px;">
+          <!-- render products here, from js file -->
+          <div class="customers-browsing-products content child-mx-12"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- end customers-browsing -->
+
+  <!-- start sign-in-recommendation -->
+  <div class="sign-in-recommendation">
+    <div class="sign-in-container">
+      <div class="content">
+        <span class="font-13">See personalized recommendations</span>
+        <a href="#" class="sign-in-btn"><span>Sign in</span></a>
+        <span class="font-13">New customer?
+          <a href="#" class="blue-link" style="display: inline-block">Start here</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- end sign-in-recommendation -->
+
+  <!-- Go to top -->
+  <div class="back-to-top" onclick="goToTop()">
+    <span class="text">Back to top</span>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container center">
+
+      <div class="links center py-40">
+
+        <div class="link">
+          <span class="link-head">Get to Know Us</span>
+          <ul>
+            <li><a href="#">About Amazon</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Amazon Science</a></li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <span class="link-head">Shop with Us</span>
+          <ul>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="#">Your Addresses</a></li>
+            <li><a href="#">Your Lists</a></li>
+          </ul>
+        </div>
+
+        <div class="link mob-tab-mt40">
+          <span class="link-head">Make Money with Us</span>
+          <ul>
+            <li><a href="#">Advertise Your Products</a></li>
+            <li><a href="#">Sell on Amazon</a></li>
+            <li><a href="#">Fulfillment by Amazon</a></li>
+          </ul>
+        </div>
+
+        <div class="link mob-tab-mt40">
+          <span class="link-head">Let Us Help You</span>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns & Replacements</a></li>
+            <li><a href="#">Amazon App Download</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- language-country-choice -->
+  <div class="language-country-choice center py-40 mob-tab-hide">
+    <div class="content center">
+
+      <a href="#"><img class="amazon-logo" src="./img/amazon-icons/amazon_logo-white.svg" alt="amazon.eg-logo"></a>
+
+      <div style="position: relative; display: flex; align-items: center;">
+
+        <div class="choice change-language-and-country">
+
+          <div class="choice-content">
+            <img src="./img/amazon-icons/earth.png" class="earth-icon" alt="earth-icon">
+            <span class="gray font-13 weight-400">English</span>
+            <span class="arrow"></span>
+          </div>
+
+          <!-- start language and country -->
+          <div class="language-and-country">
+            <div style="cursor: default;">
+              <div class="lang-container">
+                <label for="arabic-lang" class="flex-row">
+                  <input type="radio" name="lang" id="arabic-lang">
+                  <span>العربية - AR</span>
+                </label>
+              </div>
+              <div class="lang-container">
+                <label for="english-lang" class="flex-row">
+                  <input type="radio" name="lang" id="english-lang" checked>
+                  <span>English - EN</span>
+                </label>
+              </div>
+              <div class="shopping-on">
+                <img src="./img/egypt-flag.png" alt="egypt-flag" width="9%" class="flag-img">
+                <span>You are shopping on <span class="weight-600">amazon.eg</span></span>
+              </div>
+              <div class="change-country">
+                <a href="#" class="blue-link">Change country/region</a>
+              </div>
+            </div>
+          </div>
+          <!-- end language and country -->
+
+        </div>
+
+        <div class="choice" style="margin-left: 10px;">
+          <div class="choice-content">
+            <img src="./img/egypt-flag.png" class="egypt-flag" alt="egypt-flag">
+            <span class="gray font-13 weight-400">Egypt</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- amazon-related-links -->
+  <div class="amazon-related-links py-40">
+    <div class="footer-container center">
+
+      <div class="links center mob-tab-hide">
+
+        <div class="column-link">
+          <a href="#" class="mb-20">
+            <span class="white weight-500">Amazon Advertising</span><br>
+            <span class="font-10">Find, attract, and<br>andengage customers</span>
+          </a>
+          <a href="#">
+            <span class="white weight-500">Audible</span><br>
+            <span class="font-10">Download<br>Audio Books</span>
+          </a>
+        </div>
+
+        <div class="column-link">
+          <a href="#" class="mb-20">
+            <span class="white weight-500">Sell on Amazon.ae</span><br>
+            <span class="font-10">Sell globally, start with UAE</span><br>
+          </a>
+          <a href="#">
+            <span class="white weight-500">IMDb</span><br>
+            <span class="font-10">Movies, TV<br>& Celebrities</span>
+          </a>
+        </div>
+
+        <div class="column-link">
+          <a href="#" class="mb-20">
+            <span class="white weight-500">Sell on Amazon.sa<br></span>
+            <span class="font-10">Sell globally, start with Saudi Arabia</span><br>
+          </a>
+          <a href="#">
+            <span class="white weight-500">Alexa</span><br>
+            <span class="font-10">Actionable Analytics<br>for the Web</span>
+          </a>
+        </div>
+
+        <div class="column-link">
+          <a href="#" class="mb-20">
+            <span class="white weight-500">Amazon Web Services</span><br>
+            <span class="font-10">Scalable Cloud<br>Computing Services</span>
+          </a>
+          <a href="#">
+            <span class="white weight-500">Book Depository</span><br>
+            <span class="font-10">Books With Free<br>Delivery Worldwide</span>
+          </a>
+        </div>
+
+        <div class="column-link">
+          <a href="#" class="mb-20">
+            <span class="white weight-500">Goodreads</span><br>
+            <span class="font-10">Book reviews<br>& recommendations</span>
+          </a>
+          <a href="#">
+            <span class="white weight-500">Shopbop</span><br>
+            <span class="font-10">Designer<br>Fashion Brands</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="copyright-privacy center">
+        <a href="#">Conditions of Use & Sale</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Interest-Based Ads</a>
+        <span class="mob-tab-block mob-tab-mt10">©1996-2022, Amazon.com, Inc. or its affiliates</span>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="./index.js" type="module" defer></script>
+  <script src="./js/header.js" defer></script>
+  <script src="./js/horizontalScroll.js" defer></script>
+
+  <script> function goToTop() { scrollTo(0, 0) } </script>
+
+</body>
+
+</html>
